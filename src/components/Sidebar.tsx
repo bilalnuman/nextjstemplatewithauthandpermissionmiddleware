@@ -19,6 +19,7 @@ const Sidebar = () => {
     return (
         <aside className='w-[140px] border-e h-screen flex flex-col gap-1 pt-3'>
             <Link href={"/dashboard"} className='p-2'>Dashboard</Link>
+            <Link href={"/add-product"} className='p-2'>Product</Link>
             <Link href={"/payments"} className='p-2'>Payments</Link>
             <Link href={"/login"} className='p-2'>Login</Link>
             <Link href={"/register"} className='p-2'>Register</Link>

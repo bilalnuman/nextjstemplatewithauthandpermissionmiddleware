@@ -123,6 +123,7 @@ export const config = {
     "/register",
     "/access-not-allowed",
     "/payments/:path*",
+    "/add-product/:path*",
     {
       source:
         "/((?!api|_next/static|_next/image|favicon.ico|.*.png|.*.svg|.*.jpg|invoice-pdf).*)",
