@@ -2,7 +2,7 @@
 import { NextResponse, NextRequest } from "next/server";
 import { cachedProfile } from "@/src/lib/profileCache";
 
-const TTL_MS = 1000 * 60;
+const TTL_MS = 1000 * 10;
 
 type BackendMeResponse = any;
 
@@ -66,6 +66,7 @@ export async function GET(req: NextRequest) {
             statusCode: 200 as const,
             permissions: ["read", "write"] as const,
         };
+        console.log(user)
 
         if (!user.is_subscribed) {
             return NextResponse.json(

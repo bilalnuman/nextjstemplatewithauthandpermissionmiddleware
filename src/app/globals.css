@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 /* ✅ Tailwind v4 needs this if you're using tailwind.config.* (recommended) */
-@config "../tailwind.config.ts";
+@config "../../tailwind.config.ts";
 
 /* ✅ Load the HeroUI plugin wrapper */
-@plugin "../hero.ts";
+@plugin "../../hero.ts";
 
 /* ✅ Tailwind v4 ignores node_modules by default — explicitly scan HeroUI theme */
 @source "../node_modules/@heroui/theme/dist";
